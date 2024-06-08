@@ -1,0 +1,125 @@
+/* General styles for the body container */
+.body-container {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1 solid orange;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 10px auto;
+}
+
+/* Header styling */
+.body-container h1 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Shimmer effect styles */
+.shimmer-container {
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    background: #f6f7f8;
+    background-image: linear-gradient(to right, #eeeeee 0%, #dddddd 20%, #eeeeee 40%, #eeeeee 100%);
+    background-repeat: no-repeat;
+    background-size: 1000px 100%;
+    animation: shimmer 1s linear infinite;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.shimmer-data-container {
+    width: 100%;
+    height: 100%; /* Adjust height as needed */
+}
+
+/* Styling for PersonForm content */
+.person-form {
+    background: rgb(232, 221, 221);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.person-form p {
+    font-size: 18px;
+    color: #fffdfd;
+    margin: 10px 0;
+}
+
+/* Form container styles */
+.form-container {
+    background-color: rgb(166, 166, 232);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+/* Add shadow effect on hover */
+.form-container:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.data-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.data-container h2 {
+    font-size: 20px;
+    font-family: Arial, sans-serif; /* Example font */
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Font styles for h3 */
+.data-container h3 {
+    font-size: 15px;
+    font-family: 'Times New Roman', serif; /* Example font */
+    color: black;
+    text-align: center;
+}
+
+/* Counter container styles */
+.count-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Button styles */
+.count-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.count-container button:hover {
+    background-color: #365858;
+}
+
+/* Count display styles */
+.count-container span {
+    font-size: 18px;
+    color: #333;
+}
